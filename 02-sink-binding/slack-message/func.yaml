@@ -1,0 +1,15 @@
+specVersion: 0.35.0
+name: slack-message
+runtime: node
+registry: cali0707
+image: cali0707/slack-message:latest
+imageDigest: sha256:355ef46e4b4d39d531288c336d072e2efdbd072e156186acae103cacc18cc24b
+created: 2023-09-18T13:25:48.782215946-04:00
+invoke: cloudevent
+build:
+  builder: pack
+run:
+  envs:
+  - value: '{{ secret:slack-token }}'
+deploy:
+  namespace: default
