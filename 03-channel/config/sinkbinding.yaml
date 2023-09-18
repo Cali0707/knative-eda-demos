@@ -1,0 +1,31 @@
+apiVersion: sources.knative.dev/v1
+kind: SinkBinding
+metadata:
+  name: fx-sinkbinding
+spec:
+  subject:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: fx
+  sink:
+    ref:
+      apiVersion: messaging.knative.dev/v1
+      kind: Channel 
+      name: my-channel
+---
+apiVersion: sources.knative.dev/v1
+kind: SinkBinding
+metadata:
+  name: fy-sinkbinding
+spec:
+  subject:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: fy
+  sink:
+    ref:
+      apiVersion: messaging.knative.dev/v1
+      kind: Channel 
+      name: my-channel
+
+
