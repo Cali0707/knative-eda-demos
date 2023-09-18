@@ -1,1 +1,3 @@
 */**/*.secret.yaml
+*/**/node_modules
+*/**/.func
