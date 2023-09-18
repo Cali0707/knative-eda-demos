@@ -1,0 +1,12 @@
+specVersion: 0.35.0
+name: fy
+runtime: node
+registry: docker.io/cali0707
+image: docker.io/cali0707/fy:latest
+imageDigest: sha256:02a9d991759d1bfde28bd68059cac674c3c78c4588395a479a71ae95c3138426
+created: 2023-09-18T15:20:21.488184425-04:00
+invoke: cloudevent
+build:
+  builder: pack
+deploy:
+  namespace: default

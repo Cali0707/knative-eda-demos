@@ -1,0 +1,37 @@
+apiVersion: eventing.knative.dev/v1
+kind: Broker 
+metadata:
+  name: my-broker
+  namespace: default
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger 
+metadata:
+  name: slack-message
+  namespace: default
+spec:
+  broker: my-broker
+  filter:
+    attributes:
+      toolarge: "true"
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: slack-message
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger 
+metadata:
+  name: slack-result
+  namespace: default
+spec:
+  broker: my-broker
+  filter:
+    attributes:
+      toolarge: "false"
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: slack-result
