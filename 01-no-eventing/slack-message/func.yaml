@@ -3,14 +3,13 @@ name: slack-message
 runtime: node
 registry: cali0707
 image: cali0707/slack-message:latest
-imageDigest: sha256:74f6654094a06addc5f1de3ed3446e4e22a70837b7259de8bc474b17af43861d
+imageDigest: sha256:355ef46e4b4d39d531288c336d072e2efdbd072e156186acae103cacc18cc24b
 created: 2023-09-18T13:25:48.782215946-04:00
 invoke: cloudevent
 build:
   builder: pack
 run:
   envs:
-  - name: SLACK_TOKEN
-    value: xoxb-5750024459783-5912455193123-svlKVZbWRhFEOU2iUfqE9QoQ
+  - value: '{{ secret:slack-token }}'
 deploy:
   namespace: default
