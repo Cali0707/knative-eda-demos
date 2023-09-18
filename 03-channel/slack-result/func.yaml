@@ -1,0 +1,15 @@
+specVersion: 0.35.0
+name: slack-result
+runtime: node
+registry: docker.io/cali0707
+image: docker.io/cali0707/slack-result:latest
+imageDigest: sha256:3dfe91bc678e9a638b6be08dbb964ec569633f89a479f8b348974e1e1fea08ff
+created: 2023-09-18T15:51:01.430295002-04:00
+invoke: cloudevent
+build:
+  builder: pack
+run:
+  envs:
+  - value: '{{ secret:slack-token }}'
+deploy:
+  namespace: default
