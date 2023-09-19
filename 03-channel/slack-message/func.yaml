@@ -3,7 +3,7 @@ name: slack-message
 runtime: node
 registry: cali0707
 image: cali0707/slack-message:latest
-imageDigest: sha256:947c87dec517f9b545fdc5a60aa9d19d2dd6d67d4e8493c9139844e2b7a75cdf
+imageDigest: sha256:7ba89bfcdd10199b0523d8ad734afca1c12a6145f94453182ec6ae8aefa67788
 created: 2023-09-18T13:25:48.782215946-04:00
 invoke: cloudevent
 build:
