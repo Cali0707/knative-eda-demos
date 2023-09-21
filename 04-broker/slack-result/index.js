@@ -37,7 +37,7 @@ const handle = async (context, event) => {
   try {
 	  const result = await web.chat.postMessage({
 		  text: `The result is ${event.data.result}`,
-		  channel: "C05NK0NC83E",
+		  channel: "C05T7PZ1VE2",
 	  })
 
 	  return new CloudEvent({
