@@ -38,7 +38,7 @@ const handle = async (context, event) => {
 
 	const result = await web.chat.postMessage({
 		text: event.data.message,
-		channel: "C05NK0NC83E",
+		channel: "C05T7PZ1VE2",
 	})
 
 

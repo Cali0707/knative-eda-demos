@@ -3,7 +3,7 @@ name: slack-result
 runtime: node
 registry: docker.io/cali0707
 image: docker.io/cali0707/slack-result:latest
-imageDigest: sha256:fe7bee6189abe8eeb2c6fd8a7128aa333964f34eafdd7da41d9f85942810f319
+imageDigest: sha256:20501bb3f5e65b19d351649311ae328aa77c74658b85b506dc6f7ccb02a9a3ed
 created: 2023-09-18T15:51:01.430295002-04:00
 invoke: cloudevent
 build:

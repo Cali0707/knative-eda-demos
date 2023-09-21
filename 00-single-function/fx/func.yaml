@@ -3,7 +3,7 @@ name: fx
 runtime: node
 registry: docker.io/cali0707
 image: docker.io/cali0707/fx:latest
-imageDigest: sha256:47c4586e3074757f9cece0205d532a355934b38ce4cfd6a54c98effad0bd7cd9
+imageDigest: sha256:c6245e1de7eb6bc747e64227f5132f6a3df27eb06cfd48b805e64185d7dba0db
 created: 2023-09-18T12:56:42.179369958-04:00
 invoke: cloudevent
 build:

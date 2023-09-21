@@ -3,7 +3,7 @@ name: fy
 runtime: node
 registry: docker.io/cali0707
 image: docker.io/cali0707/fy:latest
-imageDigest: sha256:39098c3ad35b5619e31602c86603151cde3101159e30726e2b91adf23155a699
+imageDigest: sha256:b88b774c4b2b76ad08779d9b15c19fe42833fb004500474563fbcd99be193b2a
 created: 2023-09-18T15:20:21.488184425-04:00
 invoke: cloudevent
 build:
