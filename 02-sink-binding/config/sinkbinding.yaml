@@ -1,7 +1,7 @@
 apiVersion: sources.knative.dev/v1
 kind: SinkBinding
 metadata:
-  name: sinkbinding
+  name: fx-sinkbinding
 spec:
   subject:
     apiVersion: serving.knative.dev/v1
